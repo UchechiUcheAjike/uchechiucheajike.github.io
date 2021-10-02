@@ -1,0 +1,87 @@
+h1{
+    font-family: 'Noto Serif', serif;
+    font-size: 43px;
+    color:whitesmoke ;
+    padding-bottom: 10px;
+    background-color:#49274a;
+}
+h2{
+    font-family: 'Noto Serif', serif;
+    font-size: 30px;
+    color: whitesmoke;
+}
+h3{
+    font-family: 'Noto Serif', serif;
+    font-size: 20px;
+    color: whitesmoke;
+}
+ul li {
+    padding: 5px 5px 5px 5px;
+    color: black;
+    background: color black;
+  }
+header{
+    text-align: center;
+}
+
+body{
+    background-color: #94618e;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin-left:auto;
+    margin-right:auto;
+    width: 300px;
+}
+
+#coursetitle{
+    text-align: center;
+    background-color:#49274a;
+}
+
+ul.li
+{
+list-style-type: none;
+color:white;
+}
+#mdn{
+    color:whitesmoke;
+    text-decoration: none;
+}
+a
+{
+list-style-type: none;
+color: white;
+}
+
+footer{
+    font-family: 'Noto Serif', serif;
+    font-size: 15px;
+    color:whitesmoke ;
+    padding-bottom: 10px;
+    background-color:#49274a;
+
+}
+@media screen and (max-width:980px)
+{
+    .columns .column{
+        margin-bottom: 5px;
+        flex-basis:40%
+    }
+    .columns .column:last-child{
+        flex-basis: 100%;
+        margin:0;
+    }
+    .columns .column:nth-child(2){
+       margin-right: 0;
+    }
+
+}
+@media screen and (max-width:680px){
+    .columns .column{
+        flex-basis:100%;
+        margin:0 0 5px 0;        
+    }
+}

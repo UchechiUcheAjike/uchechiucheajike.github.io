@@ -1,0 +1,134 @@
+h1{
+    font-family: 'Noto Serif', serif;
+    font-size: 43px;
+    color: white;
+    padding-bottom: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+    background-color:#49274a;
+}
+h2{
+    font-family: 'Noto Serif', serif;
+    font-size: 30px;
+    color: whitesmoke;
+    text-align: center;
+    padding-bottom: 5px;
+    background-color:#49274a;
+}
+h3{
+    font-family: 'Noto Serif', serif;
+    font-size: 20px;
+    color: whitesmoke;
+    text-align: center;
+    padding-bottom: 3px;
+    background-color:#49274a;
+}
+h4{
+    color:whitesmoke;
+}
+p{
+    color:#49274a;
+    font-size: large;
+}
+#website{
+    font-family: 'Noto Serif', serif;
+    font-size: 20px;
+    color: whitesmoke;
+    text-align: center;
+    padding-bottom: 5px;
+    background-color: whitesmoke;  
+}
+body{
+    background-color: #94618e;
+    font-family: 'Open Sans', sans-serif;
+    margin:0;
+    padding:0;
+    
+}
+.columns{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 10px 0;
+}
+.column{
+    box-shadow: 5px 10px;
+    text-align: center;
+    flex:1;
+    border:1px solid rgba(63, 60, 42, 0.733);
+    margin :2px;
+    padding:2px;
+    background:#F4DECB;
+    transition:0.3s;
+    justify-content: center;
+}
+.column:first-child{
+    margin-left: 0;
+    background: #F4DECB;
+    text-align: center;
+}
+.column:last-child{
+    margin-left: 0;
+    background: #F4DECB;
+    text-align: center;
+}
+img{
+    object-fit:contain;
+    width: 65%;
+    height:65%;
+}
+footer{
+    text-align: center;
+    padding-bottom: 3px;
+    background-color:#49274a;
+}
+#paragraph{
+    color:whitesmoke;
+}
+
+
+#coursetitle{
+    text-align: center;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+.grid-container img{
+    text-align: center;
+}
+
+.contrast{
+    background-color: rgb(44, 7, 44);
+    grid-auto-rows: 20px;
+}
+
+.wrapper{
+    padding:5px;
+    max-width:960px;
+    width:95%;
+    margin:20px auto;
+}
+@media screen and (max-width:980px)
+{
+    .columns .column{
+        margin-bottom: 5px;
+        flex-basis:40%
+    }
+    .columns .column:last-child{
+        flex-basis: 100%;
+        margin:0;
+    }
+    .columns .column:nth-child(2){
+       margin-right: 0;
+    }
+
+}
+@media screen and (max-width:680px){
+    .columns .column{
+        flex-basis:100%;
+        margin:0 0 5px 0;        
+    }
+}
+    
