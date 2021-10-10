@@ -1,0 +1,254 @@
+header {
+  display: flex;
+  /* /align-items: left; */
+  padding: 0;
+  text-align: center;
+  color: #49274a;
+  background-color: #49274a;
+
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #F4DECB;
+  max-width: 100vw;
+  width: 100%;
+}
+
+html {
+  max-width: 100vw;
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Noto Serif', serif;
+  font-size: 40px;
+  color: whitesmoke;
+  padding-bottom: 10px;
+  background-color: #49274a;
+  margin: 0px;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  font-family: 'Noto Serif', serif;
+  font-size: 20px;
+  color: #49274a;
+
+}
+
+h3 {
+  font-family: 'Noto Serif', serif;
+  font-size: 20px;
+  color: whitesmoke;
+}
+
+#sitename {
+  display: block;
+  color: whitesmoke;
+  font-size: 20px;
+  margin: 10px;
+}
+
+#sitename h1 {
+  padding: 0px;
+  font-size: 30px;
+
+}
+
+#sitename p {
+  margin: 0px;
+  font-size: 12px;
+}
+
+#id1 {
+  font-size: 50px;
+  display: block;
+  text-align: center;
+}
+
+.wrapper {
+  padding: 5px;
+  max-width: 960px;
+  width: 95%;
+  margin: 5px auto;
+
+}
+
+.columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.column:hover:first-child {
+  background-color: #94618e;
+}
+
+.column:hover:last-child {
+  background-color: #94618e;
+}
+
+.column:hover {
+  background-color: #94618e;
+}
+
+.column {
+  box-shadow: 2px 5px;
+  text-align: center;
+  flex: 1;
+  border: 1px solid whitesmoke;
+  margin: 2px;
+  padding: 2px;
+  background: whitesmoke;
+  transition: 0.3s;
+}
+
+.column:first-child {
+  margin-left: 0;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.nav-menu-item {
+  text-decoration: none;
+  color: #49274a;
+}
+
+.column:last-child {
+  margin-left: 0;
+  background: whitesmoke;
+  text-align: center;
+}
+
+img {
+  object-fit: contain;
+  width: 65%;
+  height: 65%;
+}
+
+#photo1 {
+  object-fit: contain;
+  width: 35%;
+  height: 35%;
+}
+
+#photo2 {
+  object-fit: contain;
+  width: 35%;
+  height: 35%;
+}
+
+h3 {
+  color: whitesmoke;
+}
+
+#logo1 {
+  width: 100px;
+}
+
+#logo2 {
+  width: 25%;
+  height: 25%;
+}
+
+#coursetitle {
+  text-align: center;
+  box-shadow: 2px 5px;
+  padding: 1%;
+  height: 100px;
+}
+
+#pagecontent {
+  background-color: #F4DECB;
+  box-shadow: 2px 5px;
+  padding: 1%;
+}
+
+#main1 {
+  display: flex;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+}
+
+.contentbox {
+  display: block;
+  margin: 10px 0px;
+  border: 1px solid #49274a;
+  padding: 15px;
+  background-color: whitesmoke;
+  color: #49274a;
+  font-style: oblique;
+  box-shadow: 2px 5px;
+}
+footer {
+  font-family: 'Noto Serif', serif;
+  font-size: 15px;
+  color: whitesmoke;
+  background-color: #49274a;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+
+
+/* Small/Phone View ***************/
+nav {
+	margin: 0 auto;
+	max-width: 100%;
+	background-color: #49274a;
+  
+}
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: whitesmoke;
+	font-weight: 700;
+	transition: 0.5s;
+}
+.navigation a:hover {
+	color: whitesmoke;
+	background-color:#94618e;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+	display: block;
+}
+
+/* Media Query for medium+ views */
+@media only screen and (min-width: 32.5em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+}
