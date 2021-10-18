@@ -3,7 +3,7 @@ header {
   /* /align-items: left; */
   padding: 0;
   text-align: center;
-  color: #49274a;
+  color: whitesmoke;
   background-color: #49274a;
 
 }
@@ -45,6 +45,11 @@ h3 {
   color: whitesmoke;
 }
 
+#preston{
+  text-align: center;
+}
+
+
 #sitename {
   display: block;
   color: whitesmoke;
@@ -72,10 +77,10 @@ h3 {
 
 #logo1 {
   width: 100px;
+  float:left;
 }
 
 .action {
-  background-color: red;
   grid-column: 2;
   grid-row: 1;
   margin: 1em 3em;
@@ -152,3 +157,116 @@ nav {
 		display: none;
 	}
 }
+
+.box {
+  margin : 20px;
+  margin-bottom : 0;
+  padding : 20px;
+  border-style :groove;
+  border-color:black;
+  background-color : #49274a;
+  color:whitesmoke;
+content: "";
+display: grid;
+clear: both;
+} 
+
+.weatherSummary{
+list-style-type: none;
+text-align: left;
+}
+
+#idahoImage {
+display : block;
+height : 350px;
+width : 100%;
+margin : 0 auto;
+} 
+
+#weatherSummary ul {
+list-style-type : none;
+
+} 
+
+.grid {
+  display : grid;
+  grid-template-columns : 1fr 1fr;
+}
+  
+#labels {
+  text-align : center;
+  padding : 0;	
+}
+  
+  
+#forecast {
+  padding : 1.5rem;
+  display : none;	
+} 
+
+.summaryHeader{
+  text-align : center;
+}
+
+
+
+@media (max-width: 32.5em) {
+#forecastImage {
+  display: none;
+}
+}
+
+table {
+margin : 0 auto;
+width : 100%;
+align-items: center;
+background-color : #49274a;
+}
+
+table, th, td {
+border : black solid 1px;
+  font-family: 'Roboto', sans-serif;
+}
+
+th {
+font-size : 1.25rem;
+background-color : #49274a;
+}
+
+td {
+padding-top : 10px;
+text-align : center;
+font-size : 1.25rem;
+background-color : #49274a;
+align-items: center;
+} 
+
+tr{
+  text-align: center;
+  align-items: center;
+}
+
+
+#cityImage{
+float : left;
+}
+
+
+#prestonMap{
+float : left;
+}
+
+noscript {
+margin : 1rem;
+background-color : #49274a;
+  color:whitesmoke;
+width : 100%;
+}
+
+#banner-top {
+display : none;
+text-align : center;
+background-color : #49274a;
+color:whitesmoke;
+padding : 0.75rem;
+} 

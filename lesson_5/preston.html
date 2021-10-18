@@ -18,24 +18,25 @@
         href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&family=Noto+Serif&family=Open+Sans:ital,wght@0,400;1,500&display=swap"
         rel="stylesheet">
     <!--Normalize link-->
-    <link rel="stylesheet" href="../lesson_4/css/preston.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../lesson_5/css/preston.css">
     <link rel="preload" href="../normalize.css" as="style">
 
     <title>Preston Weather</title>
 </head>
 
 <body id="body">
+    <aside id="banner-top">
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+    </aside>
+    <noscript>JavaScript not yet enabled for this item</noscript>
 
     <header id="header">
-        <img src="../lesson_3/logo.jpg" id="logo1" alt="my logo">
         <div id="sitename">
-            <aside id="banner-top">
-                Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
-            </aside>
-            <noscript>JavaScript not yet enabled for this item</noscript>
-            <header id="header">  
-            <h1>Weather live</h1>
-            <p>The accurate weather hub</p>
+            <img src="../lesson_3/logo.jpg" id="logo1" alt="my logo">
+                <h1>Weather live</h1>
+                <p>The accurate weather hub</p>
+            
         </div>
     </header>
 
@@ -52,72 +53,86 @@
                 <li><a href="#">Gallery</a></li>
             </ul>
         </nav>
-        <main >
+        <main>
             <section id="pagecontent">
-                <h2 style="color: white;" class="Preston">Preston, Idaho</h2>
+                <h2 style="color: #49274a;" id="preston">Preston, Idaho</h2>
                 <div class="box">
-                    <img id= "idahoImage" src="images/Idaho_image.jpg" alt="idaho_image"  style="width:100%;" >
-                <div id="weatherSummary">
-                    <h2 class="summaryHeader">Weather Summary</h2>
+                    <img id="idahoImage" src="../lesson_5/images/banner_box.jpg" alt="idaho_image" style="width:100%;">
+                    <div id="weatherSummary">
+                        <h2 class="summaryHeader">Weather Summary</h2>
                         <ul id="labels">
                             <li>Currently: Sunny</li>
                             <li>Temperature: 65 &#8457;</li>
                             <li>Humidity: 69% </li>
                             <li>Wind Speed: 3 mph</li>
                         </ul>
-                </div>
+                    </div>
                 </div>
                 <div class="box" id="forecastImage">
                     <h2 class="summaryHeader">5 Day Forecast</h2>
                     <table>
                         <tr>
-                          <th>Sat</th>
-                          <th>Sun</th>
-                          <th>Mon</th>
-                          <th>Tue</th>
-                          <th>Wed</th>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
                         </tr>
                         <tr>
                             <td>
-                                <img src="images/sunny.png" alt="Sunny icon" style="width:100%;">
-                                <p>65&#8457;</p> 
+                                <img src="../lesson_5/images/sun.png" alt="Sunny icon" style="width:100%;">
+                                <p>65&#8457;</p>
                             </td>
                             <td>
-                                <img src="images/sunny.png" alt="Sunny icon" style="width:100%;">
-                                <p>87&#8457;</p> 
+                                <img src="../lesson_5/images/sun.png" alt="Sunny icon" style="width:100%;">
+                                <p>87&#8457;</p>
                             </td>
                             <td>
-                                <img src="images/sunny.png" alt="Sunny icon" style="width:100%;">
-                                <p>75&#8457;</p> 
-                            </td>                        
+                                <img src="../lesson_5/images/sun.png" alt="Sunny icon" style="width:100%;">
+                                <p>75&#8457;</p>
+                            </td>
                             <td>
-                                <img src="images/sunny.png" alt="Sunny icon" style="width:100%;">
-                                <p>87&#8457;</p> 
-                            </td>                        
+                                <img src="../lesson_5/images/sun.png" alt="Sunny icon" style="width:100%;">
+                                <p>87&#8457;</p>
+                            </td>
                             <td>
-                                <img src="images/sunny.png" alt="Sunny icon" style="width:100%;">
-                                <p>72&#8457;</p> 
-                            </td>                    
+                                <img src="../lesson_5/images/sun.png" alt="Sunny icon" style="width:100%;">
+                                <p>72&#8457;</p>
+                            </td>
                         </tr>
                     </table>
                 </div>
                 <div class="box">
                     <h2 class="summaryHeader">Article Title</h2>
-                    <p><img src="images/day_in_idaho_image.jpg" id="cityImage" alt="cityImage" style="width:300px;height:250px;margin-right:15px;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
-                    </div>
+                    <p><img src="../lesson_5/images/summary.jpg" id="cityImage" alt="cityImage"
+                            style="width:300px;height:250px;margin-right:15px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
+                        interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl
+                        est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.
+                        Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus
+                        interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim
+                        ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus
+                        gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor
+                        porta. Cras ac leo purus. Mauris quis diam velit.</p>
+                </div>
                 <div class="box">
-                    <div id="contactInfo"><p>  <img id="prestonMap" src="images/preston_idaho_map.jpg"  alt="Map of Preston Idaho" style="width:300px;height:250px;margin-right:15px;margin-bottom:15px;"> <h2>Contact Information</h2>
-                        <p>&#128231; myweatherhub.emailus</p>
-                        <p>&#9742; (000)-111-2222</p>
-                        <div id="iconBar">
-                            <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter" style="font-size:36px; color:rgb(94, 136, 252)"></i></a>
-                            <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" style="font-size:36px; color:rgb(37, 32, 4)"></i></a>
-                            <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-f" style="font-size:36px; color:rgb(16, 54, 160)"></i></a>
-                        </div>     
-                    </div>                
-                </div> 
-            </section>  
+                    <div id="contactInfo">
+                        <p> <img id="prestonMap" src="../lesson_5/images/map.jpeg" alt="Map of Preston Idaho"
+                                style="width:300px;height:250px;margin-right:15px;margin-bottom:15px;">
+                            <h2>Contact Information</h2>
+                            <p>&#128231; weatherlive.emailus</p>
+                            <p>&#9742; (000)-123-5678</p>
+                            <div id="iconBar">
+                                <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"
+                                        style="font-size:36px; color:rgb(94, 136, 252)"></i></a>
+                                <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"
+                                        style="font-size:36px; color:rgb(37, 32, 4)"></i></a>
+                                <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-f"
+                                        style="font-size:36px; color:rgb(16, 54, 160)"></i></a>
+                            </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
 
@@ -129,8 +144,8 @@
 
     </footer>
 
-
+<script src="/lesson_5/js/preston.js"> </script>
 </body>
-<script src="/lesson_4/js/preston.js"> </script>
+
 
 </html>
