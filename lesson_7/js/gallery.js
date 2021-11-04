@@ -58,72 +58,12 @@ let temp = 6;
 buildWC(speed,temp);
 
 
-// lazy load images
-
-// function preloadeImage(img) {
-//     const src = img.getAttribute("data-src");
-//     if(!src) {
-//         return;
-//     }
-//     img.src = src;
-// }
-
-// const images = document.querySelectorAll("[data-src]");
-
-// const imgOptions = {
-//     threshold: 0,
-//     rootMargin: "0px 0px 300px 0px"
-// };
-
-// const imgObserver = new IntersectionObserver((entries, imgObserver) => {
-//     entries.forEach(entry => {
-//         if (!entry.isIntersecting) {
-//             return;
-//         } 
-//         else{
-//             preloadImage(entry.target);
-//             imgObserver.unobserve(entry.target);
-
-//         }
-//     })
-
-// }, imgOptions);
-
-// images.forEach(image => {
-//     imgObserver.observe(image);
-// })
 
 
 
 
-function loadImages(images){
-    images.forEach((image)=>{
-        const {src} = image.dataset;
-        if(!src) return;
-        image.src =src;
-    })
-}
 
-(function () {
 
-const images = document.querySelectorAll("img");
 
-if(!window.IntersectionObserver){
-    loadImages(images);
-    return;
-}
 
-var intersectionObserver = new IntersectionObserver(function(entries) {
-    entries.forEach((entry)=> {
-        if(!entry.isIntersecting) return;
-        intersectionObserver.unobserve(entry.target);
-        const {src} = entry.target.dataset;
-        if(!src) return;
-        entry.target.src = src;
-    })
-  });
-  // start observing
-  images.forEach((image)=>{
-      intersectionObserver.observe(image);
-  })
-  })();
+
