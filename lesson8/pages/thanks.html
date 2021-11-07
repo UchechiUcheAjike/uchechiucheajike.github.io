@@ -18,46 +18,48 @@
         href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&family=Noto+Serif&family=Open+Sans:ital,wght@0,400;1,500&display=swap"
         rel="stylesheet">
     <!--Normalize link-->
-    <link rel="stylesheet" href="../lesson_4/css/preston.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/lesson8/css/stormcenter.css">
     <link rel="preload" href="../normalize.css" as="style">
-
-
-    <!-- favicon link -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <title>Preston Weather</title>
 </head>
 
 <body id="body">
+    <aside id="banner-top">
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+    </aside>
+    <noscript>JavaScript not yet enabled for this item</noscript>
 
     <header id="header">
-        <img src="../lesson_3/logo.jpg" id="logo1" alt="my logo">
+        <img src="/lesson_3/logo.jpg" id="logo1" alt="my logo">
         <div id="sitename">
             <h1>Weather live</h1>
             <p>The accurate weather hub</p>
+
         </div>
     </header>
 
 
-    <nav>
-        <ul class="navigation">
-            <li><a onClick="toggleMenu()" href="#">&#9776; Menu</a></li>
-            <li><a href="../lesson_1/index.html">Home</a></li>
-            <li><a href="../lesson_4/preston.html">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
-            <li><a href="/lesson8/pages/stormcenter.html">Storm Center</a></li>
-            <li><a href="#">Gallery</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <h2 id="id1">Preston Idaho</h2>
-        <div class="contentbox">Hero w/ weather summary</div>
-        <div class="contentbox forcast">5 Day Forcast</div>
-        <div class="contentbox">Article</div>
-        <div class="contentbox">Contact information</div>
-    </main>
+    <div class="wrapper">
+        <nav>
+            <ul class="navigation ">
+                <li><a onClick="toggleMenu()" href="#">&#9776; Menu</a></li>
+                <li><a href="/lesson_1/index.html">My Portal</a></li>
+                <li><a href="/lesson_5/preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="/lesson8/pages/stormcenter.html">Storm Center</a></li>
+                <li><a href="/lesson_7/pages/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="box2">
+                <h1 class="thanks"> We will get back to you as soon as possible. Thank you for submitting the Preston
+                    weather form...</h1>
+            </div>
+        </main>
+    </div>
 
     <footer>
         <p>&copy; 2021 | Uchechi Uche Ajike | <a style="color:whitesmoke;"
@@ -66,9 +68,9 @@
         </p>
 
     </footer>
-
+    <script src="/lesson_7/js/lazy-load.js"> </script>
 
 </body>
-<script src="/lesson_4/js/preston.js"> </script>
+
 
 </html>
