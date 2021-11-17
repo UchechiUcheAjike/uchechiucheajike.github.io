@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link to google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&family=Open+Sans:ital,wght@0,400;1,500&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&family=Noto+Serif&family=Open+Sans:ital,wght@0,400;1,500&display=swap"
+        rel="stylesheet">
+    <!--Normalize link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/lesson_9/css/index.css">
+    <link rel="preload" href="../normalize.css" as="style">
+
+    <title>Weather Live Home Page</title>
+</head>
+
+<body id="body">
+    <aside id="banner-top">
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+    </aside>
+    <noscript>JavaScript not yet enabled for this item</noscript>
+
+    <header id="header">
+        <img src="/lesson_3/logo.jpg" id="logo1" alt="my logo">
+        <div id="sitename">
+            <h1>Weather live</h1>
+            <p>The accurate weather hub</p>
+
+        </div>
+    </header>
+
+
+    <div class="wrapper">
+        <nav>
+            <ul class="navigation ">
+                <li><a onClick="toggleMenu()" href="#">&#9776; Menu</a></li>
+                <li><a href="/lesson_9/pages/index.html">Home</a></li>
+                <li><a href="/lesson_1/index.html">My Portal</a></li>
+                <li><a href="/lesson_5/preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="/lesson_8/pages/stormcenter.html">Storm Center</a></li>
+                <li><a href="/lesson_7/pages/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Weather Site Home Page</h1>
+            <div id="towns"></div>
+          </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2021 | Uchechi Uche Ajike | <a style="color:whitesmoke;"
+                href="https://developer.mozilla.org/en-US/">MDN Documentation Site |</a> BYU-Idaho Last Updated: <span
+                class="updated"> </span>
+        </p>
+        <p>
+            Wireframes: <a style="color:whitesmoke;" href="https://wireframe.cc/pro/pp/a91e0f512493035#1" target="_blank">Small</a>
+            <a style="color:whitesmoke;" href="https://wireframe.cc/pro/pp/a91e0f512493035#cwxxqw11" target="_blank">Medium</a>
+            <a style="color:whitesmoke;" href="https://wireframe.cc/pro/pp/a91e0f512493035#mj7m6vp3" target="_blank">Large</a> 
+            
+            
+        </p>
+    </footer>
+    <script src="/lesson_9/js/towndata.json"></script>
+    <script src="/lesson_9/js/index.js"> </script>
+    <script src="/lesson_9/js/gallery.js"> </script>
+
+</body>
+
+
+</html>

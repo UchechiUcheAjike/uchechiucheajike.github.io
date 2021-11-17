@@ -1,0 +1,485 @@
+header {
+  display: flex;
+  padding: 0;
+  text-align: center;
+  color: whitesmoke;
+  background-color: #49274a;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #F4DECB;
+  max-width: 100vw;
+  width: 100%;
+}
+
+html {
+  max-width: 100vw;
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Noto Serif', serif;
+  font-size: 40px;
+  color: whitesmoke;
+  padding-bottom: 10px;
+  background-color: #49274a;
+  margin: 0px;
+  text-align: center;
+}
+
+#weathergallery {
+  text-align: center;
+}
+
+
+.summaryHeader {
+
+  display: block;
+  text-align: center;
+  font-family: 'Noto Serif', serif;
+  font-size: 25px;
+  color: whitesmoke;
+
+
+}
+h2 {
+  font-family: 'Noto Serif', serif;
+  font-size: 30px;
+  color: whitesmoke;
+}
+h3 {
+  font-family: 'Noto Serif', serif;
+  font-size: 20px;
+  color: whitesmoke;
+}
+h4 {
+  font-family: 'Noto Serif', serif;
+  font-size: 15px;
+  color: whitesmoke;
+}
+
+#preston {
+  font-size: 50px;
+  display: block;
+  text-align: center;
+}
+
+
+#sitename {
+  display: block;
+  color: whitesmoke;
+  font-size: 20px;
+  margin: 10px;
+}
+
+#sitename h1 {
+  padding: 0px;
+  font-size: 30px;
+
+}
+
+#sitename p {
+  margin: 0px;
+  font-size: 12px;
+}
+
+#id1 {
+  font-size: 50px;
+  display: block;
+  text-align: center;
+}
+
+
+#logo1 {
+  width: 100px;
+  float: left;
+}
+
+.action {
+  grid-column: 2;
+  grid-row: 1;
+  margin: 1em 3em;
+  padding: 1em;
+  text-align: center;
+}
+
+footer {
+  font-family: 'Noto Serif', serif;
+  font-size: 15px;
+  color: whitesmoke;
+  background-color: #49274a;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+
+
+/* Small/Phone View ***************/
+nav {
+  margin: 0 auto;
+  max-width: 100%;
+  background-color: #49274a;
+
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.navigation li:first-child {
+  display: block;
+  text-align: center;
+}
+
+.navigation li {
+  display: none;
+  text-align: center;
+}
+
+.navigation a {
+  display: block;
+  padding: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 700;
+  transition: 0.5s;
+
+}
+
+.navigation a:hover {
+  color: whitesmoke;
+  background-color: #94618e;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+    <ul class="navigation responsive">
+  */
+.responsive li {
+  display: block;
+}
+
+/* Media Query for medium+ views */
+@media only screen and (min-width: 32.5em) {
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li {
+    display: block;
+    /* change state in small view */
+    flex: 1 1 auto;
+  }
+
+  .navigation a {
+    text-align: center;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+}
+
+.box {
+  margin: 20px;
+  margin-bottom: 0;
+  padding: 20px;
+  border-style: groove;
+  border-color: black;
+  background-color: #49274a;
+  color: whitesmoke;
+  content: "";
+  display: grid;
+  clear: both;
+}
+
+.weatherSummary {
+  list-style-type: none;
+  text-align: left;
+}
+
+#idahoImage {
+  display: block;
+  height: 350px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#weatherSummary ul {
+  list-style-type: none;
+
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#labels {
+  text-align: center;
+  padding: 0;
+}
+
+
+#forecast {
+  padding: 1.5rem;
+  display: none;
+}
+
+@media (max-width: 32.5em) {
+  #forecastImage {
+    display: none;
+  }
+}
+
+table {
+  margin: 0 auto;
+  width: 100%;
+  align-items: center;
+  background-color: #49274a;
+}
+
+table,
+th,
+td {
+  border: black solid 1px;
+  font-family: 'Roboto', sans-serif;
+}
+
+th {
+  font-size: 1.25rem;
+  background-color: #49274a;
+}
+
+td {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 1.25rem;
+  background-color: #49274a;
+  align-items: center;
+}
+
+tr {
+  text-align: center;
+  align-items: center;
+}
+
+
+#cityImage {
+  float: left;
+}
+
+
+#prestonMap {
+  float: left;
+}
+
+noscript {
+  margin: 1rem;
+  background-color: #49274a;
+  color: whitesmoke;
+  width: 100%;
+}
+
+#banner-top {
+  display: none;
+  text-align: center;
+  background-color: #49274a;
+  color: whitesmoke;
+  padding: 0.75rem;
+}
+
+.columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.column {
+  box-shadow: 5px 10px;
+  text-align: center;
+  flex: 1;
+  border: 1px solid rgba(63, 60, 42, 0.733);
+  margin: 2px;
+  padding: 2px;
+  background: #F4DECB;
+  transition: 0.3s;
+  justify-content: center;
+}
+
+.column:first-child {
+  margin-left: 0;
+  background: #F4DECB;
+  text-align: center;
+}
+
+.column:last-child {
+  margin-left: 0;
+  background: #F4DECB;
+  text-align: center;
+}
+
+/* hover for images */
+.img:hover {
+  box-shadow: 0 0 50px #49274a;
+}
+
+/* image laz load */
+/* [data-src] {
+    min-width: 50-px;
+    min-height: 50px;
+  } */
+
+
+
+
+#gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+@media screen and (min-width: 650px) {
+  #gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .boxImage:hover {
+    box-shadow: 0 0 15px #49274a;
+  }
+}
+
+.boxImage {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  box-shadow: 3px 3px 10px gray;
+}
+
+.boxImage p {
+  padding-left: 1rem;
+  font-style: italic;
+}
+
+.boxImage img {
+  width: 100%;
+  height: 100%px;
+}
+
+
+/* form */
+.box2 {
+  margin: 20px;
+  margin-bottom: 0;
+  padding: 20px;
+  border-style: dashed;
+  border-color: black;
+  background-color: #49274a;
+  color: white;
+  content: "";
+  display: grid;
+  clear: both;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.thanks {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+
+/* json/javascript */
+
+.townCard h2 {
+	text-align : center;
+	font-size : 16pt;
+	margin-bottom : 1rem;
+	padding-top : 1rem;
+	color:whitesmoke;
+	font-size : 20pt;
+	
+}
+
+.townCard p {
+	padding : 0 1rem;
+	color:whitesmoke;
+	
+}
+
+.townCard span {
+	font-size : 11pt;
+	color:whitesmoke;
+	font-style: italic;
+}
+
+.townCard {
+	display : block;
+	height : auto;
+	width : 100%;
+	margin : 1em auto;
+	background-color : #49274a;
+	text-align : center;
+	padding-bottom : 1rem;
+}
+
+.townCard img {
+	max-width : 100%;
+	display : block;
+	margin : 1em auto;
+	box-shadow : 5px 5px 5px gray;
+	max-height : 170px;
+
+	
+} 
+
+@media screen and (min-width: 650px) {
+	.townCard {
+	display : grid;
+	grid-template-columns : 1fr 1fr;
+	}
+
+	#towns section:nth-child(even) img {
+		grid-column : 1 / 2;
+		grid-row : 1 / 2;
+	}
+
+	#towns section:nth-child(odd) div {
+	grid-column : 2 / 3;
+	flex-direction: row-reverse;
+	}
+} 
+
+@media screen and (min-width: 1200px) {
+
+.townCard {
+		display : block;
+		max-width : 100%;
+}
+
+#towns {
+		display : grid;
+		grid-template-columns : 1fr 1fr 1fr;
+		gap : 1rem;
+}
+} 
