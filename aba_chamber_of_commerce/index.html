@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    
+    <!-- css links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/aba_chamber_of_commerce/style/chamber_of_commerce.css">
+    <link rel="preload" href="../normalize.css" as="style">
+    
+    <!-- Google material design icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Chamber of Commerce Home</title>
+</head>
+
+<body id=body>
+    <script src="/aba_chamber_of_commerce/js/date.js"></script> 
+    <header id="header">
+        <img src="/aba_chamber_of_commerce/images/logoname.jpg" id="logo1" alt="my logo">
+    </header>
+    <div class="nav">
+        <nav>
+            <ul class="navigation">
+                <li><a onClick="toggleMenu()" href="#">&#9776; Menu</a></li>
+                <li><i class="material-icons">search</i></li>
+                <li><a href="/aba_chamber_of_commerce/index.html">Home</a></li>
+                <li><a href="/aba_chamber_of_commerce/pages/city.html">City</a></li>
+                <li><a href="/aba_chamber_of_commerce/pages/join.html">Join</a></li>
+                <li><a href="/aba_chamber_of_commerce/pages/directory.html">Directory</a></li>
+                <li><a href="/aba_chamber_of_commerce/pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="wrapper">
+        <main>
+            <section id="pagecontent">
+            <div class="wrapper1">
+                <div>
+                    <img src="/aba_chamber_of_commerce/images/commerce.jpg" id="banner-image" alt="Banner Image">
+                    <div class="centered_element">
+                        <div id="weatherSummary">
+                        <h2 class="summaryHead">Weather Summary</h2>
+                            <ul id="labels">
+                                <li>Currently: <span id="current_weather"></span></li>
+                                <li>High: <span id="temp"></span> &#8457;</li>
+                                <li>Wind Chill: <span id="windchill"></span> &#8457;</li>
+                                <li>Humidity: <span id="humidity"></span> </li>
+                                <li>Wind Speed: <span id="wind_speed"></span> mph</li>
+                            </ul>
+                    </div>
+                </div>
+                </div>
+            
+            <div class="commercial">
+            <p><a href="https://starlinenigeria.com.ng/portal/">
+            <img src="/aba_chamber_of_commerce/images/starline.jpg" class="ad" alt="Ad Image" style="width:250px;height:200px;margin-left:15px; "loading="lazy">
+            </a></p>
+
+            <p><a href="https://tonimasgroup.com/en/">
+            <img src="/aba_chamber_of_commerce/images/tonimas.jpg"  class="ad" alt="Ad Image" style="width:250px;height:200px;margin-left:15px; "loading="lazy">
+            </a></p>
+
+            <p><a href="https://www.judeagbalaholdings.com/">
+            <img src="/aba_chamber_of_commerce/images/holdings.jpg"  class="ad" alt="Ad Image" style="width:250px;height:200px;margin-left:15px; "loading="lazy">
+            </a></p>
+            </div>
+
+            <div class="purpose">
+            <h1>Purpose of Chamber</h1>
+            <p id="paragraph-4">This web site will be for the chamber of commerce of my local city.
+             The name of my city is Aba, and this website will show the commercial 
+             side of this local city. The site will have commercial information on it. 
+             There will be commercials of local town businesses displayed on the website 
+             and it help bring traffic to the site. The advertisements will promote local
+            businesses and give the site’s audiences business options. </p>
+            <br>
+            </div>
+
+            <div class="join">
+            <a style="color:#8E793E" href="/aba_chamber_of_commerce/pages/join.html">Join</a>
+            </div>
+
+            <div class="contactinfo">
+                <div> 
+                    <h3>GET IN TOUCH</h3>
+                    <p>Adress: No 3 Umuimo Road, Aba – Nigeria</p>
+                    <p>E-mail: secretariate@accimang.org</p>
+                    <p>Phone: +2348138241363</p>
+                    <p>Skype: ACCIMANG</p>
+                </div>
+                <div> 
+                    <h3>SITE CONTENTS</h3>
+                    <p><a href="/aba_chamber_of_commerce/pages/city.html">City</a></p>
+                    <p><a href="/aba_chamber_of_commerce/pages/join.html">Join</a><p>
+                    <p><a href="/aba_chamber_of_commerce/pages/directory.html">Directory</a><p>
+                    <p><a href="/aba_chamber_of_commerce/pages/contact.html">Contact</a><p>
+                </div>
+                <div> 
+                    <h3>UPCOMING EVENTS</h3>
+                    <p><a href="">Pure Cheer at Pure Barre Woodbridge</a></p>
+                    <p><a href="">Challenge Yourself at Pure Barre Woodbridge</a><p>
+                    <p><a href="">PBW December 2021 – Meet Me at the Barre</a><p>
+                </div>
+        </section>
+        </main>
+    </div>
+    
+    <footer>
+        
+        <p>&copy; 2021 | Uchechi Uche Ajike | <a style="color:black;"
+                href="https://developer.mozilla.org/en-US/">MDN Documentation Site |</a> BYU-Idaho Last Updated: <script> 
+                    lastModified();
+                    </script> <span
+                class="updated"> </span>
+        </p>
+        <div class="foot">
+        <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"
+            style="font-size:36px; color:rgb(94, 136, 252)"></i></a>
+    <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"
+            style="font-size:36px; color:rgb(37, 32, 4)"></i></a>
+    <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-f"
+            style="font-size:36px; color:rgb(16, 54, 160)"></i></a>
+
+        <img class="bottomlogo" src="/aba_chamber_of_commerce/images/logo.jpg" id="logo1" alt="my logo">
+    </div>
+    </footer>
+    <script src="/aba_chamber_of_commerce/js/weatherapi.js"></script> 
+    <script src="/aba_chamber_of_commerce/js/windchill.js"></script> 
+</body>
+
+</html>
