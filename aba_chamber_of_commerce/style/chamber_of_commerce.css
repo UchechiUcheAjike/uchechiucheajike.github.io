@@ -110,6 +110,33 @@ footer{
   
 }
 
+.Benefits{
+    max-width: 980px;
+    margin:5px auto;
+    color: white;
+    width:100%;
+    background-color: #8E793E;
+    padding-top:10px;
+    padding-bottom:20px;
+    padding-left:3px;
+    padding-right:3px;
+   
+  }
+  
+  .left{
+    float: left;
+    padding:0 10px 0px 0px;
+    max-width:100%;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .right{
+    float:right;
+    padding:0 10px 0px 0px;
+    max-width:100%;
+    font-family: 'Roboto', sans-serif;
+  }
+
 .material-icons{
     color:white;
     /* width: 50px; */
