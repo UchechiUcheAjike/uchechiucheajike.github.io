@@ -29,6 +29,12 @@ p{
     color:white;
     text-align: center;
 }
+#nigeria{
+    text-align: center;
+}
+#inec{
+    text-align: center;
+}
 #banner-image {
     display: block;
     margin-left: auto;
@@ -151,6 +157,13 @@ footer{
     padding:0 10px 0px 0px;
     max-width:100%;
     font-family: 'Roboto', sans-serif;
+  }
+  .contactform{
+      background-color: #AD974F;
+      text-align: center;
+  }
+  .map{
+      text-align: center;
   }
 
 .material-icons{
