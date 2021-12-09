@@ -98,7 +98,17 @@ footer{
     text-align: center;
     background-color: #8E793E;
 }
-
+.form-popup{
+    background-color: #AD974F;
+    max-width: 100%;
+    text-align: center;
+    
+}
+.action_banner{
+    background-color: white;
+    text-align: center;
+  
+}
 
 .material-icons{
     color:white;
